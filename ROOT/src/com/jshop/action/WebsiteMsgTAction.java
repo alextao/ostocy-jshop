@@ -41,6 +41,8 @@ public class WebsiteMsgTAction {
 	private int rp;
 	private int page = 1;
 	private int total = 0;
+	private String adminid ="";
+	private String adminname = "";
 	
 	@JSON(serialize=false)
 	public WebsiteMsgTService getWebsiteMsgTService() {
@@ -113,6 +115,7 @@ public class WebsiteMsgTAction {
 	public void setMsgstate(String msgstate) {
 		this.msgstate = msgstate;
 	}
+	@JSON(serialize=false)
 	public Serial getSerial() {
 		return serial;
 	}
